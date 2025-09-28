@@ -1,11 +1,11 @@
 let modInfo = {
-	name: "The ??? Tree",
-	author: "nobody",
+	name: "The Evolution Tree",
+	author: "voidcons0le",
 	pointsName: "points",
 	modFiles: ["layers.js", "tree.js"],
 
-	discordName: "",
-	discordLink: "",
+	discordName: "discord that doesnt exist",
+	discordLink: "discord",
 	initialStartPoints: new Decimal (10), // Used for hard resets and new players
 	offlineLimit: 1,  // In hours
 }

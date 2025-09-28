@@ -6,7 +6,8 @@ addLayer("p", {
         unlocked: true,
 		points: new Decimal(0),
     }},
-    color: "#4BDC13",
+    color: "#a4ff3cff",
+    resetDescription: "Prestige to gain ",
     requires: new Decimal(10), // Can be a function that takes requirement increases into account
     resource: "prestige points", // Name of prestige currency
     baseResource: "points", // Name of resource prestige is based on
@@ -24,5 +25,11 @@ addLayer("p", {
     hotkeys: [
         {key: "p", description: "P: Reset for prestige points", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
     ],
-    layerShown(){return true}
+    layerShown(){return true},
+    tabFormat: [
+        "main-display",
+        "prestige-button",
+        "empty",
+        ["display-text", "i hope this text <glow>glows</glow>"]
+    ]
 })
