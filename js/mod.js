@@ -1,12 +1,12 @@
 let modInfo = {
-	name: "The Omega Tree",
+	name: "a name of that tab for i do not know what to call it",
 	author: "voidcons0le",
 	pointsName: "points",
 	modFiles: ["layers.js", "tree.js"],
 
 	discordName: "discord that doesnt exist",
 	discordLink: "discord.com/invite/testicle",
-	initialStartPoints: new Decimal (10), // Used for hard resets and new players
+	initialStartPoints: new Decimal (0), // Used for hard resets and new players
 	offlineLimit: 1,  // In hours
 }
 
@@ -41,7 +41,8 @@ function getPointGen() {
 	if(!canGenPoints())
 		return new Decimal(0)
 
-	let gain = new Decimal(1)
+	let gain = new Decimal(0)
+	if (hasUpgrade('p', 11)) gain = gain.add(1)
 	return gain
 }
 

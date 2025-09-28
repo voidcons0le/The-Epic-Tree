@@ -5,18 +5,16 @@ body {
 	--background: #0f0f0f;
 	--color: #dfdfdf;
 	--points: #ffffff;
-	background: var(--background)
+	background: var(--background);
 }
 
 /* General text */
 h1, h2, h3, input {
 	display: inline;
-	font-family: "JetBrains Mono", "Courier New", monospace
+	font-family: "Lucida Console", "Courier New", monospace
 }
 b {
-	text-shadow: 0 0 13px currentColor;
-	text-shadow: 0 0 7px currentColor;
-	text-shadow: 0 0 5px currentColor
+	text-shadow: 0 0 10px currentColor;
 }
 
 /* These are styles for different states of components. You can make layer-specific versions with .c.locked, for example */
