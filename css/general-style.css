@@ -5,14 +5,17 @@ body {
 	--background: #0f0f0f;
 	--color: #dfdfdf;
 	--points: #ffffff;
-	background: var(--background)
+	background: var(--background);
 }
 
 /* General text */
-h1, h2, h3, b, input {
+h1, h2, h3, input {
 	display: inline;
 	font-family: "Inconsolata", "Courier New", monospace;
 	text-shadow: 0 0 6px currentColor;
+}
+b {
+	text-shadow: 0 0 10px currentColor;
 }
 
 /* These are styles for different states of components. You can make layer-specific versions with .c.locked, for example */
@@ -40,3 +43,4 @@ h1, h2, h3, b, input {
 	color: var(--points);
 	text-shadow: 0 0 10px var(--points);
 }
+
