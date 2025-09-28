@@ -1,11 +1,11 @@
 let modInfo = {
-	name: "The Evolution Tree",
+	name: "The Omega Tree",
 	author: "voidcons0le",
 	pointsName: "points",
 	modFiles: ["layers.js", "tree.js"],
 
 	discordName: "discord that doesnt exist",
-	discordLink: "discord",
+	discordLink: "discord.com/invite/testicle",
 	initialStartPoints: new Decimal (10), // Used for hard resets and new players
 	offlineLimit: 1,  // In hours
 }

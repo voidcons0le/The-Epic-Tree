@@ -30,6 +30,30 @@ addLayer("p", {
         "main-display",
         "prestige-button",
         "empty",
-        ["display-text", "i hope this text <glow>glows</glow>"]
-    ]
+        ["display-text", "i hope this text <b>glows</b>"]
+    ],
+})
+addLayer("a", {
+    name: "achievements", symbol: "🏆", position: 0, row: "side", color: "#ffea29", tabFormat: {
+        "Main": {
+            content: [
+                ["display-text", "There are currently <h1><b><font color='#ffea29'>1</font></b></h1> achievements in the game"],["display-text", "ㅤ"],
+                "achievements"
+            ]
+        }
+    },
+    achievements: {
+        11:{
+            name: "first of many",
+            tooltip: "do your first prestige",
+            done() {return true},
+            unlocked() {return true}
+        },
+        12:{
+            name: "beta",
+            tooltip: "lo budget alpha wolf from 99 nights",
+            done() {return false},
+            unlocked() {return true}
+        },
+    }
 })
